@@ -41,17 +41,38 @@
 
 }
 .new-image-01{
-  width: 80%;
-  height: 100%; 
+  width: 125%;
+  height: 115%; 
    border: 1px solid #92823b;
-  border-radius:20px;
+  border-radius:130px 0px 0px 130px;
   background-image: url("/assets/img/constructions-4.jpg");
 }
 
 
 .new-1-image{
-  width: 150px;
+  width: 30%;
+  height: 40%;
+}
+.new-1-image1{
+  width: 130px;
   height: 100%;
+}
+.footer-logo{
+  width: 10%;
+  height: 0%;
+}
+.new-hero-curve{}
+.new-look-out{
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 0px 0px ;
+  background-image: url("/assets/img/lomeq final logo.png");
+}
+.new-ww{
+  width: 100%;
+}
+.new-logo-up{
+  padding-top: -40px;
 }
 .dark-background {
   --background-color: #060606;
@@ -204,7 +225,7 @@ h6 {
 /* Desktop Navigation */
 @media (min-width: 1200px) {
   .navmenu {
-    padding: 0;
+    padding: 10;
   }
 
   .navmenu ul {
@@ -779,7 +800,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 50vh;
+  min-height: 40vh;
   position: relative;
   padding: 0;
   display: flex;
