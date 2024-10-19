@@ -50,8 +50,8 @@
 
 
 .new-1-image{
-  width: 45%;
-  height: 40%;
+  width: 150px;
+  height: 100%;
 }
 .dark-background {
   --background-color: #060606;
@@ -163,8 +163,12 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 105px;
-  margin-right: 145px;
+  max-height: 100%;
+  margin-right: 100%;
+}
+.new-logo-set{
+  width: 50px;
+  height: 50px;
 }
 
 .header .logo h1 {
@@ -775,7 +779,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
   padding: 0;
   display: flex;
