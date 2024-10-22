@@ -17,19 +17,75 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.55);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: rgba(0, 0, 0, 0.55);  /* The default color of the main navmenu links */
+  --nav-hover-color: #000000; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #92823b; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
+
+.header-logo{
+
+  align-items: center;
+  width: 250px;
+  height: 250px;
+
+} 
+
+.mb-3 {
+  width: 250px;
+  height: 170px;
+  margin-top: -50px;
+  margin-left: -70px;
+  background-image: url(/assets/img/lomeq\ final\ logo.png);
+
+}
+
+
+
+.header-munu ul>li:not(:last-child)::after {
+  content: " | ";
+  margin: 0 8px;
+  /* Adjust the spacing as needed */
+}
+.main-logo-heder{
+  width: 100%;
+  height: 90px;
+  background-color: #ffffff;
+}
+
+
+.header-munu .sub-menu ul>li:not(:last-child)::after {
+  content: "";
+  margin: 0 0px;
+  /* Adjust the spacing as needed */
+}
+
+.header-munu ul {
+  list-style: none;
+  display: inline-block;
+  margin-right: 153px;
+}
+
+
+
+
+
+
+
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #92823b;
   --surface-color: #ffffff;
+}
+.logo-new-design{
+  width: 100%;
+  height: 20%;
+  color: #060606;
+  position: fixed;
 }
 
 .new-about-img{
@@ -47,7 +103,11 @@
   border-radius:130px 0px 0px 130px;
   background-image: url("/assets/img/constructions-4.jpg");
 }
-
+.header-logo{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
 
 .new-1-image{
   width: 30%;
@@ -61,7 +121,6 @@
   width: 10%;
   height: 0%;
 }
-.new-hero-curve{}
 .new-look-out{
   width: 100%;
   height: 100%;
@@ -2899,4 +2958,484 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-munu.style-two ul li a {
+  color: {
+      {
+      this.navtext
+    }
+  }
+
+  ;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 35px 0;
+}
+
+.header-munu.style-two ul li a:hover {
+  color: {
+      {
+      this.primarycolor
+    }
+  }
+
+  ;
+  /* add orange underline on hover */
+
+}
+
+.header-munu.style-two ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 2px solid #ffA500;
+  /* orange underline color */
+  /* margin top of the underline */
+  transform: scaleX(0);
+  /* initially, the underline is not visible */
+  transition: transform 0.3s;
+  /* transition effect for underline */
+}
+
+.project-area.inner-page {
+  padding: 110px 0 0px;
+}
+
+
+
+.mean-container .mean-bar::before {
+  color: #fff;
+  background-image: url('/assets/img/lomeq\ final\ logo.png');
+  /* Replace 'path/to/your/logo.png' with the actual path to your logo image */
+  background-size: contain;
+  /* Adjust the background-size property based on your needs */
+  background-repeat: no-repeat;
+  width: 100px;
+  /* Set the width of your logo */
+  height: 40px;
+  /* Set the height of your logo */
+  left: 10px;
+  position: absolute;
+  top: 18px;
+}
+
+.header-munu.style-two .sub-menu ul li a::after {
+  content: '';
+}
+
+.header-munu.style-two ul li a:hover::after {
+  transform: scaleX(1);
+  /* make the underline visible on hover */
+
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .header-munu.style-two ul li {
+    margin-left: 9px;
+  }
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+
+
+
+.header-chat h3 {
+  margin: 0 0 10px;
+}
+
+.header-chat p {
+  font-size: 14px;
+  color: #000;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.info-avatar {
+  position: relative;
+}
+
+.info-avatar img {
+  border-radius: 100%;
+  width: 50px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+a.informasi {
+  padding: 20px;
+  display: block;
+  overflow: hidden;
+  animation-name: showhide;
+  animation-duration: 0.5s;
+}
+
+a.informasi:hover {
+  background: #f1f1f1;
+}
+
+.info-chat span {
+  display: block;
+}
+
+#get-label,
+span.chat-label {
+  font-size: 12px;
+  color: #888;
+}
+
+#get-nama,
+span.chat-nama {
+  margin: 5px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+#get-label,
+#get-nama {
+  color: #fff;
+}
+
+span.my-number {
+  display: none;
+}
+
+/* .blanter-msg {
+color: #444;
+padding: 20px;
+font-size: 12.5px;
+text-align: center;
+border-top: 1px solid #ddd;
+} */
+textarea#chat-input {
+  border: none;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  color: black;
+  resize: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+a#send-it {
+  width: 50px;
+  font-weight: 700;
+  padding: 10px 10px 0;
+  background: #4cae50;
+  border-radius: 0px;
+
+  svg {
+    fill: #ffffff;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.first-msg {
+  background: transparent;
+  padding: 30px;
+  text-align: center;
+
+  & span {
+    background: #e2e2e2;
+    color: #333;
+    font-size: 14.2px;
+    line-height: 1.7;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: inline-block;
+  }
+}
+
+.start-chat .blanter-msg {
+  display: flex;
+}
+
+#get-number {
+  display: none;
+}
+
+a.close-chat {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+@keyframes ZpjSY {
+  0% {
+    background-color: rgb(182, 181, 186);
+  }
+
+  15% {
+    background-color: rgb(17, 17, 17);
+  }
+
+  25% {
+    background-color: rgb(182, 181, 186);
+  }
+}
+
+@keyframes hPhMsj {
+  15% {
+    background-color: rgb(182, 181, 186);
+  }
+
+  25% {
+    background-color: rgb(17, 17, 17);
+  }
+
+  35% {
+    background-color: rgb(182, 181, 186);
+  }
+}
+
+@keyframes iUMejp {
+  25% {
+    background-color: rgb(182, 181, 186);
+  }
+
+  35% {
+    background-color: rgb(17, 17, 17);
+  }
+
+  45% {
+    background-color: rgb(182, 181, 186);
+  }
+}
+
+@keyframes showhide {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes showchat {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #whatsapp-chat {
+    z-index: 99999;
+
+    width: auto;
+    left: 5%;
+    right: 5%;
+    font-size: 80%;
+  }
+}
+
+.hide {
+  display: none;
+  animation-name: showhide;
+  animation-duration: 0.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.show {
+  display: block;
+  animation-name: showhide;
+  animation-duration: 0.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.whatsapp-message-container {
+  display: flex;
+  z-index: 1;
+}
+
+.whatsapp-message {
+  padding: 7px 14px 6px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 8px 8px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  transform-origin: center top 0px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+  margin-top: 4px;
+  margin-left: -54px;
+  max-width: calc(100% - 66px);
+}
+
+.whatsapp-chat-body {
+  padding: 20px 20px 20px 10px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.08;
+    background-color: white;
+  }
+
+
+.dAbFpq {
+  display: flex;
+  z-index: 1;
+}
+
+.eJJEeC {
+  background-color: rgb(255, 255, 255);
+  width: 52.5px;
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  margin-left: 10px;
+  opacity: 0;
+  transition: all 0.1s ease 0s;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+}
+
+.hFENyl {
+  position: relative;
+  display: flex;
+}
+
+.ixsrax {
+  height: 5px;
+  width: 5px;
+  margin: 0px 2px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  top: 0px;
+  background-color: rgb(158, 157, 162);
+  animation-name: ZpjSY;
+}
+
+.dRvxoz {
+  height: 5px;
+  width: 5px;
+  margin: 0px 2px;
+  background-color: rgb(182, 181, 186);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  top: 0px;
+  animation-name: hPhMsj;
+}
+
+.kAZgZq {
+  padding: 7px 14px 6px;
+  background-color: rgb(232, 232, 232);
+  border-radius: 0px 8px 8px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  transform-origin: center top 0px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+  margin-top: 4px;
+  margin-left: -54px;
+  max-width: calc(100% - 66px);
+
+  &::before {
+    position: absolute;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAMAAADp2asXAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACQUExURUxpccPDw9ra2m9vbwAAAAAAADExMf///wAAABoaGk9PT7q6uqurqwsLCycnJz4+PtDQ0JycnIyMjPf3915eXvz8/E9PT/39/RMTE4CAgAAAAJqamv////////r6+u/v7yUlJeXl5f///5ycnOXl5XNzc/Hx8f///xUVFf///+zs7P///+bm5gAAAM7Ozv///2fVensAAAAvdFJOUwCow1cBCCnqAhNAnY0WIDW2f2/hSeo99g1lBYT87vDXG8/6d8oL4sgM5szrkgl660OiZwAAAHRJREFUKM/ty7cSggAABNFVUQFzwizmjPz/39k4YuFWtm55bw7eHR6ny63+alnswT3/rIDzUSC7CrAziPYCJCsB+gbVkgDtVIDh+DsE9OTBpCtAbSBAZSEQNgWIygJ0RgJMDWYNAdYbAeKtAHODlkHIv997AkLqIVOXVU84AAAAAElFTkSuQmCC');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    top: 0px;
+    left: -12px;
+    width: 12px;
+    height: 19px;
+  }
+}
+
+.bMIBDo {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.iSpIQi {
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 4px;
+  color: rgb(17, 17, 17);
+}
+
+.iSpIQi {
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 4px;
+  color: rgb(17, 17, 17);
+}
+
+.cqCDVm {
+  text-align: right;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(17, 17, 17, 0.5);
+  margin-right: -8px;
+  margin-bottom: -4px;
+}
+
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
