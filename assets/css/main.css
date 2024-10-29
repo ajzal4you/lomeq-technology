@@ -56,22 +56,20 @@
   height: 100%;
   align-items: center;
   margin-left: 40%;
-<<<<<<< HEAD
   margin-bottom: 0PX;
   padding-bottom: -20px;
-  background-color: #00000;
-=======
+  /* background-color: '#00000'; */
   margin-top: -110px;
-  /* padding-bottom: -20px; */
   /* background-color: #cb0a0a; */
 }
 
 .header-logo{
   width: 200px;
   height: 200px;
-  /* margin: auto; */
->>>>>>> 0c8ed8b (logopostion)
+  margin: auto;
+
 }
+
 
 
 .header-munu .sub-menu ul>li:not(:last-child)::after {
@@ -2986,31 +2984,18 @@ section,
 
 
 
-
-.header-munu.style-two ul li a {
-  color: {
-      {
-      this.navtext
-    }
-  }
-
-  ;
+.header-menu.style-two ul li a {
+  color: var(--navtext); /* Assuming you have a CSS variable called --navtext */
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
   padding: 35px 0;
 }
 
-.header-munu.style-two ul li a:hover {
-  color: {
-      {
-      this.primarycolor
-    }
-  }
-
-  ;
-  /* add orange underline on hover */
-
+.header-menu.style-two ul li a:hover {
+  color: var(--primarycolor); /* Assuming you have a CSS variable called --primarycolor */
+  text-decoration: underline;
+  text-decoration-color: orange; /* Adds an orange underline */
 }
 
 .header-munu.style-two ul li a::after {
