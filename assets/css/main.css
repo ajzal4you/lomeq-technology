@@ -49,7 +49,7 @@
 .header-munu ul>li:not(:last-child)::after {
   content: " | ";
   margin: 0 8px;
-  /* Adjust the spacing as needed */
+
 }
 .main-logo-heder{
   width: 20%;
@@ -68,8 +68,22 @@
   height: 200px;
   margin: auto;
 
+
+}
+.logoimg{
+  position:fixed;
 }
 
+@media screen and (max-width: 768px) {
+  .logoimg {
+   position: absolute;
+   margin-left: 30px !important;
+   position: fixed;
+  
+  
+  }
+
+}
 
 
 .header-munu .sub-menu ul>li:not(:last-child)::after {
