@@ -25,14 +25,15 @@
   --nav-dropdown-hover-color: #92823b; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
-
+/* 
 .header-logo{
 
   align-items: center;
   width: 250px;
   height: 250px;
 
-} 
+}  */
+
 
 .mb-3 {
   width: 250px;
@@ -51,13 +52,25 @@
   /* Adjust the spacing as needed */
 }
 .main-logo-heder{
-  width: 40%;
+  width: 20%;
   height: 100%;
   align-items: center;
   margin-left: 40%;
+<<<<<<< HEAD
   margin-bottom: 0PX;
   padding-bottom: -20px;
   background-color: #00000;
+=======
+  margin-top: -110px;
+  /* padding-bottom: -20px; */
+  /* background-color: #cb0a0a; */
+}
+
+.header-logo{
+  width: 200px;
+  height: 200px;
+  /* margin: auto; */
+>>>>>>> 0c8ed8b (logopostion)
 }
 
 
@@ -107,11 +120,7 @@
   border-radius:130px 0px 0px 130px;
   background-image: url("/assets/img/aboutpic.jpg");
 }
-.header-logo{
-  width: 100px;
-  height: 100px;
-  margin: auto;
-}
+
 
 .new-1-image{
   width: 30%;
